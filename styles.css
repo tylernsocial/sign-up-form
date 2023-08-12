@@ -162,3 +162,48 @@ input:hover{
 .offers{
     accent-color: #2e462f;
 }
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #667e63;
+    font-weight: bolder;
+  }
+  .foot img {
+    width: 18px;
+    height: 18px;
+  }
+
+
+.ty-page{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.ty-page-content{
+    display: flex;
+    flex: wrap;
+    color: #2e462f;
+    gap: 100px;
+}
+.thanks{
+    margin-top: 300px;
+    white-space: wrap;
+    font-size: 35px;
+    margin-left: 120px;
+}
+#thanks-img{
+    width: 40%;
+    margin-right: 200px;
+}
+.toggle {
+    display: none ;
+}
