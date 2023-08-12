@@ -123,6 +123,9 @@ input:focus-visible {
 input:valid {
     border: 1px solid #f9fbe0;  
 }
+input:hover{
+    background-color: #78a77e;
+}
 .catch-error {
     color: rgb(255, 51, 51);
     font-family: sans-serif;
@@ -155,4 +158,7 @@ input:valid {
     height: 70px;
     align-self: flex-start;
     padding: 2% 0 0 5%;
+}
+.offers{
+    accent-color: #2e462f;
 }
