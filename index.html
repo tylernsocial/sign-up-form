@@ -3,26 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="./assets/favicon.svg">
     <title>...</title>
+    
 </head>
 <body> 
-    <form action="https://httpbin.org/post" method="post">
-        <div>
-          <label for="first_name">First Name:</label>
-          <input type="text" name="first_name" id="first_name">
+<div class="over-container">
+   <div class="illustration-container">
+        <h1 class="name">Code-up<sup>®</sup></h1>
+        <img src="./assets/Code typing-bro.svg" alt="">
+        <p class="msg">Sign up now to start your coding journey with Code-up!</p>
+   </div>
+   <form action="">
+        <div class="form-container">
+            <h1 class="form-head">Lets get started:</h1>
+        
+        <div class="input">
+            <label for="first-name"></label>
+            <input type="text" name="first-name" id="first-name" required>
+            <span> First name </span> 
+            <div class="catch-error"></div>
         </div>
-      
-        <div>
-          <label for="last_name">Last Name:</label>
-          <input type="text" name="last_name" id="last_name">
+        <div class="input">
+            <label for="last-name"></label>
+            <input type="text" name="last-name" id="last-name" required>
+            <span> Last name </span>
+            <div class="catch-error"></div>
         </div>
-      
-        <div>
-          <label for="age">Age:</label>
-          <input type="number" name="age" id="age">
+        <div class="input">
+            <label for="email"></label>
+            <input type="text" name="email" id="email" required>
+            <span>Email</span>
+            <div class="catch-error"></div>
         </div>
-      
-        <button type="submit">Submit</button>
-      </form>
+        <div class="input">
+            <label for="phone"></label>
+            <input type="tel" name="phone" id="phone" >
+            <span>Phone# optional</span>
+            <div class="catch-error"></div>
+        </div>
+        <div class="input">
+            <label for="password"></label>
+            <input type="password" name="password" id="password" class="password" required>
+            <span>Password</span>
+            <div class="catch-error"></div>
+        </div>
+        <div class="input">
+            <label for="confirm-pass"></label>
+            <input type="type" name="confirm-pass" id="confirm-pass" class="confirm-pass" required>
+            <span>Confirm password</span>
+            <div class="catch-error"></div>
+        </div>
+        <div class="btn" id="btn">
+            <button type="submit" class="btn">Create account</button>  
+            <p class="btn-text">Already have an account?<a class="highlight" href="">LOGIN</a></p> 
+        </div>
+    </div>
+   </form>
+</div>
+
 </body>
 </html>
