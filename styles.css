@@ -7,7 +7,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    
     font-family: 'Roboto Mono', sans-serif; 
 }
 body{
@@ -36,7 +35,24 @@ body{
     margin-bottom: 30px;
     font-size: 40px;
     color: #f9fbe0;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 19ch;
 }
+
+@keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
 .highlight:link {
     text-decoration: none;
   }
@@ -81,6 +97,25 @@ span {
     font-size: 17px;
     outline: none;
 }
+.btn button:hover{
+    color: #5d6d5e;
+    background-color: #f9fbe0;
+    animation: float2 1s ease-in-out infinite;
+}
+@keyframes float2 {
+    0% {
+      
+      transform: translatey(0px);
+    }
+    50% {
+      
+      transform: translatey(-10px);
+    }
+    100% {
+      
+      transform: translatey(0px);
+    }
+  }
 form{
     width: auto;
     display: grid;
@@ -144,6 +179,7 @@ input:hover{
 }
 .illustration-container > img{
     width: 90%;
+    animation: float 2s ease-in-out infinite;
 }
 .name,.illustration-container > .msg{
     width: 100%;
@@ -151,6 +187,7 @@ input:hover{
     text-align: center;
     font-size: 19px;
     color: #2e462f;
+    animation: slideUp 1.5s;
 }
 .name {
     font-size: 60px;
@@ -158,6 +195,7 @@ input:hover{
     height: 70px;
     align-self: flex-start;
     padding: 2% 0 0 5%;
+    animation: slideIn 1.5s;
 }
 .offers{
     accent-color: #2e462f;
@@ -199,11 +237,108 @@ input:hover{
     white-space: wrap;
     font-size: 35px;
     margin-left: 120px;
+    animation: slideIn 1s;
+    
 }
 #thanks-img{
     width: 40%;
     margin-right: 200px;
+    animation: float 3s ease-in-out infinite;
 }
 .toggle {
     display: none ;
+}
+
+
+
+@keyframes float {
+    0% {
+      
+      transform: translatey(0px);
+    }
+    50% {
+      
+      transform: translatey(-30px);
+    }
+    100% {
+      
+      transform: translatey(0px);
+    }
+  }
+  @keyframes slideUp{
+  from {
+    transform: translateY(200px);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+  @keyframes slideIn {
+    from {
+      transform: translateX(-420px);
+    }
+  
+    to {
+      transform: translateX(0);
+    }
+  }
+@media (max-width: 540px) {
+   
+    /* 
+        For mobile phones: 
+    */
+    body{
+        width: 100%;
+        overflow: visible;
+    }
+
+    .msg {
+        margin-top: -50px;
+    }
+    .over-container {
+        grid-template-rows: 100vh minmax(100vh, auto);
+        grid-template-columns: none;
+        overflow: hidden;
+        height: auto;
+    }
+    .illustration-container{
+        width: 100%;
+        position: relative;
+    }
+    .illustration-container > img {
+        width: 100%;
+        
+    }
+    .catch-error {
+        font-size: 13px;
+    }
+    .form-container {
+        display: grid;
+        place-items: center ;
+        grid-template-columns: none;
+        grid-template-rows: none;
+        gap: 20px;
+        width: 100%;
+        gap: 45px;
+        padding: 0;
+        color: #2e462f;
+    }
+    
+    form {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+    }
+    .ty-page {
+        flex-direction: column;
+        justify-content: center;
+        gap: 30px;
+    }
+    .ty-page > #thanks-img {
+        height: auto;
+    }
+    .ty-page > .ty-page-content {
+        font-size: 20px;
+    }
 }
