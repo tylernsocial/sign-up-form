@@ -1,89 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#06aa5e">
-    <meta name="msapplication-navbutton-color" content="#06aa5e">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./assets/favicon.svg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#06aa5e" />
+    <meta name="msapplication-navbutton-color" content="#06aa5e" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./assets/favicon.svg" />
     <title>Code-up!</title>
-    
-</head>
-<body> 
-<div class="over-container">
-   <div class="illustration-container">
+  </head>
+  <body>
+    <div class="over-container">
+      <div class="illustration-container">
         <h1 class="name">Code-up<sup>®</sup></h1>
-        <img src="./assets/Code typing-bro.svg" alt="">
-        <p class="msg">Sign up now to start your coding journey with Code-up!</p>
-   </div>
-   <form action="">
+        <img src="./assets/Code typing-bro.svg" alt="" />
+        <p class="msg">
+          Sign up now to start your coding journey with Code-up!
+        </p>
+      </div>
+      <form action="">
         <div class="form-container">
-            <h1 class="form-head">Lets get started:</h1>
-        
-        <div class="input">
+          <h1 class="form-head">Lets get started:</h1>
+
+          <div class="input">
             <label for="first-name"></label>
-            <input type="text" name="first-name" id="first-name" required>
-            <span> First name </span> 
+            <input type="text" name="first-name" id="first-name" required />
+            <span> First name </span>
             <div class="catch-error"></div>
-        </div>
-        <div class="input">
+          </div>
+          <div class="input">
             <label for="last-name"></label>
-            <input type="text" name="last-name" id="last-name" required>
+            <input type="text" name="last-name" id="last-name" required />
             <span> Last name </span>
             <div class="catch-error"></div>
-        </div>
-        <div class="input">
+          </div>
+          <div class="input">
             <label for="email"></label>
-            <input type="text" name="email" id="email" required>
+            <input type="text" name="email" id="email" required />
             <span>Email</span>
             <div class="catch-error"></div>
-        </div>
-        <div class="input">
+          </div>
+          <div class="input">
             <label for="phone"></label>
-            <input type="tel" name="phone" id="phone" >
+            <input type="tel" name="phone" id="phone" />
             <span>Phone# optional</span>
             <div class="catch-error"></div>
-        </div>
-        <div class="input">
+          </div>
+          <div class="input">
             <label for="password"></label>
-            <input type="password" name="password" id="password" class="password" required>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="password"
+              required
+            />
             <span>Password</span>
             <div class="catch-error"></div>
-        </div>
-        <div class="input">
+          </div>
+          <div class="input">
             <label for="confirm-pass"></label>
-            <input type="type" name="confirm-pass" id="confirm-pass" class="confirm-pass" required>
+            <input
+              type="type"
+              name="confirm-pass"
+              id="confirm-pass"
+              class="confirm-pass"
+              required
+            />
             <span>Confirm password</span>
             <div class="catch-error"></div>
+          </div>
+          <div class="btn" id="btn">
+            <button type="submit" class="btn">Create account</button>
+            <p class="btn-text">
+              Already have an account? <a class="highlight" href="">LOGIN</a>
+            </p>
+          </div>
+          <div class="offers">
+            <input
+              type="checkbox"
+              style="float: left; margin-right: 5px"
+              id="offers"
+              name="offers"
+              checked
+            />
+            <label for="offers">
+              sign me up to receive emails from Code-up with member-only offers. </label
+            ><br />
+          </div>
         </div>
-        <div class="btn" id="btn">
-            <button type="submit" class="btn">Create account</button>  
-            <p class="btn-text">Already have an account? <a class="highlight" href="">LOGIN</a></p> 
-        </div>
-        <div class="offers">
-            <input type="checkbox" style="float: left; margin-right: 5px;" id="offers" name="offers" checked>
-            <label for="offers"> sign me up to receive emails from Code-up with member-only offers.  </label><br>
-            
-        </div>
+      </form>
     </div>
-   </form>
-</div>
-<section class="ty-page toggle">
-    <h1 class="name">Code-up<sup>®</sup></h1>
-    <div class="ty-page-content">
-        <h1 class="thanks">Account has been created, thank you for signing up with Code-up!</h1>
-        <img src="./assets/thanks.svg" alt="" id="thanks-img">
-    </div>  
-    <footer class="foot">
+    <section class="ty-page toggle">
+      <h1 class="name">Code-up<sup>®</sup></h1>
+      <div class="ty-page-content">
+        <h1 class="thanks">
+          Account has been created, thank you for signing up with Code-up!
+        </h1>
+        <img src="./assets/thanks.svg" alt="" id="thanks-img" />
+      </div>
+      <footer class="foot">
         <p>tylernsocial</p>
         <a href="https://github.com/tylernsocial" target="_blank"
-          ><img src="./assets/github-mark-white.png" alt=""/>
+          ><img src="./assets/github-mark-white.png" alt="" />
         </a>
       </footer>
-</section>
-</body>
+    </section>
+  </body>
 </html>
