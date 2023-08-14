@@ -34,25 +34,10 @@ body{
     letter-spacing: .06em;
     margin-bottom: 30px;
     font-size: 40px;
-    color: #f9fbe0;
-    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid;
-    width: 19ch;
+    color: #f9fbe0;  
+    animation: slideRight 1s;
 }
 
-@keyframes typing {
-    from {
-      width: 0
-    }
-  }
-      
-  @keyframes blink {
-    50% {
-      border-color: transparent
-    }
-  }
 .highlight:link {
     text-decoration: none;
   }
@@ -102,20 +87,7 @@ span {
     background-color: #f9fbe0;
     animation: float2 1s ease-in-out infinite;
 }
-@keyframes float2 {
-    0% {
-      
-      transform: translatey(0px);
-    }
-    50% {
-      
-      transform: translatey(-10px);
-    }
-    100% {
-      
-      transform: translatey(0px);
-    }
-  }
+
 form{
     width: auto;
     display: grid;
@@ -245,9 +217,9 @@ input:hover{
     margin-right: 200px;
     animation: float 3s ease-in-out infinite;
 }
-.toggle {
+/* .toggle {
     display: none ;
-}
+} */
 
 
 
@@ -265,6 +237,20 @@ input:hover{
       transform: translatey(0px);
     }
   }
+  @keyframes float2 {
+    0% {
+      
+      transform: translatey(0px);
+    }
+    50% {
+      
+      transform: translatey(-10px);
+    }
+    100% {
+      
+      transform: translatey(0px);
+    }
+  }
   @keyframes slideUp{
   from {
     transform: translateY(200px);
@@ -274,6 +260,15 @@ input:hover{
     transform: translateY(0);
   }
 }
+@keyframes slideRight{
+    from {
+      transform: translateX(800px);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
   @keyframes slideIn {
     from {
       transform: translateX(-420px);
@@ -295,6 +290,7 @@ input:hover{
 
     .msg {
         margin-top: -50px;
+       
     }
     .over-container {
         grid-template-rows: 100vh minmax(100vh, auto);
@@ -331,14 +327,22 @@ input:hover{
         align-items: center;
     }
     .ty-page {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
-        gap: 30px;
+        align-items: center;
     }
-    .ty-page > #thanks-img {
-        height: auto;
+    .ty-page-content{
+        flex-wrap: wrap;
+        gap: 40px;
     }
-    .ty-page > .ty-page-content {
-        font-size: 20px;
+    .thanks{
+        margin-right: 70px;
+        margin-left: 70px;
     }
+    #thanks-img {
+        width: 40%;
+        margin-right: 0px;
+        margin-left: 120px;
+    }
+    
 }
