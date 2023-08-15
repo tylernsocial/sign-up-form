@@ -47,12 +47,6 @@
             <div class="catch-error"></div>
           </div>
           <div class="input">
-            <label for="phone"></label>
-            <input type="tel" name="phone" id="phone" />
-            <span>Phone# optional</span>
-            <div class="catch-error"></div>
-          </div>
-          <div class="input">
             <label for="password"></label>
             <input
               type="password"
@@ -67,7 +61,7 @@
           <div class="input">
             <label for="confirm-pass"></label>
             <input
-              type="type"
+              type="password"
               name="confirm-pass"
               id="confirm-pass"
               class="confirm-pass"
@@ -76,8 +70,15 @@
             <span>Confirm password</span>
             <div class="catch-error"></div>
           </div>
+          <div class="input">
+            <label for="phone"></label>
+            <input type="tel" name="phone" id="phone" required />
+            <span>Phone#</span>
+            <div class="catch-error"></div>
+          </div>
+          
           <div class="btn" id="btn">
-            <button type="submit" class="btn">Create account</button>
+            <button type="submit" class="subBtn">Create account</button>
             <p class="btn-text">
               Already have an account? <a class="highlight" href="">LOGIN</a>
             </p>
@@ -112,5 +113,6 @@
         </a>
       </footer>
     </section>
+    <script src="script.js"></script>
   </body>
 </html>
